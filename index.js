@@ -27,6 +27,7 @@ app.use('/empresas', empresaRoutes);
 app.use('/categorias', categoriaRoutes);
 app.use('/produtos', produtoRoutes);
 app.use('/carrinho', carrinhoRoutes);
+app.use('/enderecos', require('./routes/enderecos'));
 
 // Middleware de tratamento de erros
 app.use((err, req, res, next) => {
